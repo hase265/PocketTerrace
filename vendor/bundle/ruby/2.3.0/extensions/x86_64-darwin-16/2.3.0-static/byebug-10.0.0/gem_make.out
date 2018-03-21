@@ -1,0 +1,19 @@
+current directory: /Users/masayahasegawa/programming/rails_projects/ko_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+/Users/masayahasegawa/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180322-40969-5zipwo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/masayahasegawa/programming/rails_projects/ko_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/masayahasegawa/programming/rails_projects/ko_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/masayahasegawa/programming/rails_projects/ko_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180322-40969-1g7wpgh/byebug
