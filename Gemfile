@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.5'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.20'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -16,6 +16,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'devise'
+
+gem 'config'
+gem 'yaml_vault'
+gem 'aws-sdk-kms'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
