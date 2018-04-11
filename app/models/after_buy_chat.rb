@@ -1,0 +1,2 @@
+class AfterBuyChat < ApplicationRecord
+end
