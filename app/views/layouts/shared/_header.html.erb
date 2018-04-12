@@ -1,0 +1,30 @@
+<header class="pc-header visible-pc">
+  <div class="pc-header-inner">
+    <div class="clearfix">
+      <h1 class="l-left"><%= link_to image_tag('/assets/mercari.svg', :alt => 'PocketTerrace'), root_path, width: 134, height: 36 %></h1>
+    </div>
+    <div class="pc-header-nav-box clearfix">
+      <nav class="l-fix">
+        <ul class="pc-header-nav">
+          <li>
+            <h2><%= link_to "授業で探す", '#' %></h2>
+          </li>
+          <li>
+            <h2><%= link_to "教授で探す", '#' %></h2>
+          </li>
+        </ul>
+      </nav>
+      <div class="l-right">
+        <ul class="pc-header-user-nav">
+          <li>
+            <%= link_to(mypage_path, class: 'sp-header-user-icon pc-header-nav-root') do %>
+              <figure>
+              </figure>
+              <div>マイページ</div>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
