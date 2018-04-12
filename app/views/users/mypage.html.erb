@@ -1,0 +1,46 @@
+<div class="l-side">
+  <nav class="mypage-nav">
+
+  </nav>
+  <ul class="mypage-nav-list">
+    <li><%= link_to "マイページ", '#' , class: "mypage-nav-list-item" %><i class="icon-arrow-right">::before</i></li>
+    <li><%= link_to "お知らせ", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "やることリスト", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "いいね！一覧", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "出品する", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "出品した商品-出品中", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "出品した商品-取引中", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "出品した商品-売却済み", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "購入した商品-取引中", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "購入した商品-過去の取引", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "評価一覧", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "お問い合わせ", '#' , class: "mypage-nav-list-item" %></li>
+  </ul>
+  <h3 class="mypage-nav-head">設定</h3>
+  <ul class="mypage-nav-list">
+    <li><%= link_to "プロフィール", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "メール/パスワード", '#' , class: "mypage-nav-list-item" %></li>
+    <li><%= link_to "ログアウト", '#' , class: "mypage-nav-list-item" %></li>
+  </ul>
+</div>
+
+<div class="l-content">
+  <section class="mypage-user-icon">
+  </section>
+  <section class="mypage-tab-container-notification-todo">
+    <ul class="mypage-tabs">
+      <li>
+        <h3><%= link_to "お知らせ", '#' %></h3>
+      </li>
+      <li>
+        <h3><%= link_to "やることリスト", '#' %></h3>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <ul id="mypage-tab-notification" class="mypage-item-list tab-pane">
+        <li></li>
+        <li class="mypage-go-list"><%= link_to "一覧を見る", '#' %></li>
+      </ul>
+    </div>
+  </section>
+</div>
