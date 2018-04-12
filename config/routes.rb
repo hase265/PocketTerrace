@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   }
   root to: 'top#index'
   resources :deal
+  get '/mypage', to: 'users#mypage'
 end
