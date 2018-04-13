@@ -1,3 +1,92 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+img {
+  margin: 0 auto;
+}
+
+.l {
+  &-side {
+    float: left;
+    width: 280px;
+    margin: 0 40px 0 0;
+  }
+
+  &-container {
+    margin: 40px auto 0;
+    width: 1020px;
+    color: #c0c0c0;
+  }
+  &-content {
+    float: right;
+    width: 700px;
+  }
+}
+
+.mypage {
+  &-user {
+    &-icon {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      background: url('user-bg.jpg');
+      background-size: cover;
+      width: inherit;
+      a {
+        display: block;
+      }
+      h2 {
+        margin: 8px 0 0;
+        font-size: 14px;
+      }
+    }
+  }
+  &-number {
+    margin: 8px 0 0;
+    height: 16px;
+    box-sizing: inherit;
+    div {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  &-tab {
+    &-container-notification-todo {
+      width: inherit;
+    }
+  }
+  &-tabs {
+    width: 100%;
+    line-height: 74px;
+    li {
+      float: left;
+      width: 50%;
+      text-align: center;
+      a {
+        display: block;
+        height: 74px;
+      }
+    }
+  }
+  &-nav {
+    &-list {
+      border-top: 0.5px solid #eee;
+      background: white;
+      &-item {
+        position: relative;
+        display: block;
+        min-height: 48px;
+        padding: 16px;
+      }
+      li {
+        width: inherit;
+        border-bottom: 0.5px solid #eee;
+      }
+    }
+    &-head {
+      width: inherit;
+      margin-top: 24px;
+    }
+
+  }
+  &-tabs {
+
+  }
+}

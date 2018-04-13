@@ -1,7 +1,9 @@
 <header class="pc-header visible-pc">
   <div class="pc-header-inner">
     <div class="clearfix">
-      <div class="l-left"><%= link_to image_tag('/assets/mercari.svg', :alt => 'PocketTerrace', width: "134", height: "36"), root_path %></div>
+      <div class="l-left">
+        <%= link_to image_tag('/assets/mercari.svg', :alt => 'PocketTerrace', width: "134", height: "36"), root_path %>
+      </div>
       <%= form_for '#', html: { class: 'pc-header-form l-right' } do |f| %>
         <%= f.search_field :keyword,  placeholder: 'キーワードから探す', class: 'input-default' %>
         <i class="icon-search"></i>
