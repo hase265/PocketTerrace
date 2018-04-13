@@ -10,6 +10,7 @@ body {
   font-family: "Source Sans Pro", "Helvetica", "Arial",
                 "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
   font-size: 14px;
+  background: #f5f5f5;
   color: rgb(51, 51, 51);
   line-height: 1;
 }
@@ -27,7 +28,12 @@ a {
 }
 
 h2 {
-  font-size: 0.9em
+  font-size: 0.9em;
+}
+
+img {
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 input {
@@ -80,13 +86,17 @@ input[type='search'] {
   background: #fff;
   &-form {
     width: 80%;
+    position: relative;
   }
 
   &-inner {
-    width: 70.8%;
+    width: 1020px;
     height: 90px;
     margin: 0 auto;
     padding: 8px 0 0;
+    div {
+      height: 38px;
+    }
   }
   &-nav {
     overflow: hidden;
@@ -126,8 +136,6 @@ input[type='search'] {
 }
 
 .clearfix {
-  width: 1020px;
-  height: 38px;
   ::after {
     content: '';
     display: block;
@@ -143,11 +151,6 @@ input[type='search'] {
 
 .l-right {
   float: right;
-}
-
-.pc-header-form {
-  position: relative;
-  width: calc(100% - (134px + 16px));
 }
 
 .nav {
