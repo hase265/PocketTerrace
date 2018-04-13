@@ -1,0 +1,35 @@
+<header class="pc-header visible-pc">
+  <div class="pc-header-inner">
+    <div class="clearfix">
+      <div class="l-left"><%= link_to image_tag('/assets/mercari.svg', :alt => 'PocketTerrace', width: "134", height: "36"), root_path %></div>
+      <%= form_for '#', html: { class: 'pc-header-form l-right' } do |f| %>
+        <%= f.search_field :keyword,  placeholder: 'キーワードから探す', class: 'input-default' %>
+        <i class="icon-search"></i>
+      <% end %>
+    </div>
+
+    <div class="pc-header-nav-box clearfix">
+      <nav class="nav-left">
+        <ul class="pc-header-nav">
+          <li>
+            <h2><%= link_to "授業で探す", '#', class: 'pc-header-nav-root' %></h2>
+          </li>
+          <li>
+            <h2><%= link_to "教授で探す", '#', class: 'pc-header-nav-root' %></h2>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <ul class="pc-header-user-nav">
+          <li>
+            <%= link_to(mypage_path, class: 'sp-header-user-icon pc-header-nav-root') do %>
+              <figure>
+              </figure>
+              <h2>マイページ</h2>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

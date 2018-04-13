@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KoApp</title>
+    <title>PocketTerrace</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,12 +9,15 @@
   </head>
 
   <body>
-    <%= render 'layouts/shared/header' %>
+    <div class="default-container">
+      <%= render 'layouts/shared/header' %>
 
-    <%= yield %>
+      <%= yield %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+    </div>
 
   </body>
 </html>
