@@ -1,3 +1,5 @@
+@import "form";
+
 * {
   margin: 0;
   padding: 0;
@@ -73,8 +75,6 @@ input[type='search'] {
   transition: all ease-out .3s;
 }
 
-
-
 .default-container {
   display: block;
 }
@@ -99,27 +99,32 @@ input[type='search'] {
     }
   }
   &-nav {
+    letter-spacing: -.4px;
     overflow: hidden;
     width: 200px;
-    height: 38px;
+    line-height: 38px;
     li {
+      letter-spacing: normal;
       display: inline-block;
       margin: auto;
-      width: 40%;
+      width: 98px;
       height: inherit;
+      h2 {
+        width: inherit;
+        height: inherit;
+      }
     }
     &-box {
-      margin: 8px 0 0;
+      margin: 6px 0 0;
       width: 1020px;
-      height: 38px;
+      line-height: 38px;
     }
     &-root {
-      margin: auto;
       width: 50%;
     }
   }
   &-user-nav {
-    height: inherit;
+    line-height: inherit;
   }
 
 }
@@ -147,6 +152,15 @@ input[type='search'] {
   float: left;
   width: 140px;
   height: 38px;
+  a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
 }
 
 .l-right {
@@ -161,7 +175,7 @@ input[type='search'] {
   }
   &-right {
     float: right;
-    height: inherit;
+    line-height: inherit;
     ul li {
       height: inherit;
     }

@@ -1,0 +1,13 @@
+.single {
+  &-container {
+    width: 100%;
+  }
+  &-header {
+    width: 100%;
+    line-height: 128px;
+    h1 {
+      width: 193px;
+      height: 49px;
+    }
+  }
+}

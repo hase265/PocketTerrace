@@ -1,44 +1,57 @@
-<h2>Sign up</h2>
+<div class="single-container">
+  <header class="single-header">
+    <h1><%= link_to image_tag('mercari.svg', alt: 'PocketTerrace'), root_path %></h1>
+  </header>
+  <main class="single-main">
+    <section class="l-single-container">
+      <h2 class="l-single-head">新規会員登録</h2>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'l-single-inner') do |f| %>
+          <%= devise_error_messages! %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+          <div class="l-single-content">
+            <div class="form-group">
+              <%= f.label "ユーザーネーム" %><span class="form-require">必須</span><br />
+              <%= f.text_field :name, autofocus: true, class: 'input-default' %>
+            </div>
 
-  <div class="field">
-    <%= f.label "ユーザーネーム" %><br />
-    <%= f.text_field :name, autofocus: true %>
-  </div>
+            <div class="form-group">
+              <%= f.label "ユーザーID" %><span class="form-require">必須</span><br />
+              <%= f.text_field :uid, placeholder: "@", class: "input-default" %>
+            </div>
 
-  <div class="field">
-    <%= f.label "ユーザーID" %><br />
-    <%= f.text_field :uid, placeholder: "@" %>
-  </div>
+            <div class="form-group">
+              <%= f.label "メールアドレス" %><span class="form-require">必須</span><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "xxx@keio.jp", class: 'input-default' %>
+            </div>
 
-  <div class="field">
-    <%= f.label "メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "xxx@keio.jp" %>
-  </div>
+            <div class="form-group">
+              <%= f.label "パスワード" %><span class="form-require">必須</span>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> 文字以上)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "off", class: 'input-default' %>
+            </div>
 
-  <div class="field">
-    <%= f.label "パスワード" %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> 文字以上)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+            <div class="form-group">
+              <%= f.label "パスワード確認" %><span class="form-require">必須</span><br />
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'input-default' %>
+            </div>
 
-  <div class="field">
-    <%= f.label "パスワード確認" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+            <div class="form-group">
+              <%= f.check_box :accepted, {}, checked_value = "true", unchecked_value = "false" %>
+              <%= f.label :利用規約とプライバシーポリシーに同意する %>
+            </div>
 
-  <div class="field">
-    <%= f.check_box :accepted, {}, checked_value = "true", unchecked_value = "false" %>
-    <%= f.label :利用規約とプライバシーポリシーに同意する %>
-  </div>
+            <div class="actions">
+              <%= f.submit "Sign up" %>
+            </div>
+          </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+        <% end %>
 
-<%= render "users/shared/links" %>
+        <%= render "users/shared/links" %>
+    </section>
+
+  </main>
+
+</div>
