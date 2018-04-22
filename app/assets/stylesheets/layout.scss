@@ -1,8 +1,8 @@
-@import "form";
-
 * {
   margin: 0;
   padding: 0;
+  font-size: inherit;
+  line-height: inherit;
   box-sizing: border-box;
 }
 
@@ -61,6 +61,18 @@ input, textarea, select, button {
   display: inline-block;
   text-align: start;
   margin: 0em;
+}
+
+a, area, button, input, label, select, textarea, [tabindex] {
+  touch-action: manipulation;
+}
+
+button, input, select, textarea{
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  background-color: transparent;
 }
 
 input[type='search'] {

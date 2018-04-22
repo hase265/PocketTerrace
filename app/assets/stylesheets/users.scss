@@ -88,3 +88,140 @@ img {
   &-tabs {
   }
 }
+
+// ユーザー新規登録
+.single {
+  &-container {
+    width: 100%;
+  }
+  &-header {
+    width: 100%;
+    line-height: 128px;
+    h1 {
+      width: 193px;
+      height: 49px;
+      margin: 0 auto;
+      a {
+        display: block;
+        height: inherit;
+        width: inherit;
+        img {
+          height: inherit;
+          width: inherit;
+          display: block;
+        }
+      }
+    }
+  }
+  &-main {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+.l {
+  &-single {
+    &-container {
+      background-color: #fff;
+    }
+    &-head {
+      font-size: 18px;
+      padding: 24px 8px;
+      line-height: 1.5;
+    }
+    &-content {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    &-inner {
+      border-top: 1px solid #f5f5f5;
+      padding: 40px;
+    }
+  }
+}
+
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+}
+
+.form-group {
+  margin: 40px 0 0;
+  :first-child {
+    margin: 0;
+  }
+  .input-default {
+    width: 100%;
+    margin: 8px 0 0;
+  }
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+label {
+  display: inline-block;
+}
+
+.form-require {
+  background: #ea352d;
+}
+
+.form-require, .form-arbitrary, .message-is-seller, .news-private {
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"],
+[type="email"], [type="month"], [type="number"], [type="password"], [type="reset"],
+[type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"],
+[type="week"], select, textarea {
+  min-height: 1.5em;
+}
+
+button, input, select, textarea{
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+}
+
+a, area, button, input, label, select, textarea, [tabindex] {
+  touch-action: manipulation;
+}
+
+.btn {
+  &-red {
+    background: #ea352d;
+    border: 1px solid #ea352d;
+    color: #fff;
+  }
+  &-default {
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    -webkit-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+    cursor: pointer;
+    text-align: center;
+  }
+}
