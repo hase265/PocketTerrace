@@ -10,8 +10,9 @@
 
   <body>
     <div class="default-container">
-      <%= render 'layouts/shared/header' %>
-
+      <% if current_user %>
+        <%= render 'layouts/shared/header' %>
+      <% end %>
       <%= yield %>
 
       <p class="notice"><%= notice %></p>

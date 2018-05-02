@@ -1,0 +1,328 @@
+/* line 2, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-container {
+  width: 100%;
+}
+/* line 5, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-header {
+  width: 100%;
+  line-height: 128px;
+}
+/* line 8, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-header h1 {
+  width: 193px;
+  height: 49px;
+}
+@charset "UTF-8";
+/* line 2, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-container {
+  width: 100%;
+}
+/* line 5, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-header {
+  width: 100%;
+  line-height: 128px;
+}
+/* line 8, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/_form.scss */
+.single-header h1 {
+  width: 193px;
+  height: 49px;
+}
+
+/* line 3, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+  font-size: 14px;
+  background: #f5f5f5;
+  color: #333333;
+  line-height: 1;
+}
+
+/* line 20, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+header {
+  position: relative;
+}
+
+/* line 24, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+li {
+  list-style: none;
+}
+
+/* line 28, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+h2 {
+  font-size: 0.9em;
+}
+
+/* line 36, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* line 41, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+/* line 53, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+}
+
+/* line 66, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+input[type='search'] {
+  -webkit-appearance: none;
+}
+
+/* line 70, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-form .input-default {
+  width: 100%;
+  height: 36px;
+  padding: 9px 32px 9px 8px;
+  background: #fafafa;
+  transition: all ease-out .3s;
+}
+
+/* line 80, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.default-container {
+  display: block;
+}
+
+/* line 84, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1001;
+  background: #fff;
+}
+/* line 89, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-form {
+  width: 80%;
+  position: relative;
+}
+/* line 94, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-inner {
+  width: 1020px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 8px 0 0;
+}
+/* line 99, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-inner div {
+  height: 38px;
+}
+/* line 103, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-nav {
+  overflow: hidden;
+  width: 200px;
+  height: 38px;
+}
+/* line 107, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-nav li {
+  display: inline-block;
+  margin: auto;
+  width: 40%;
+  height: inherit;
+}
+/* line 113, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-nav-box {
+  margin: 8px 0 0;
+  width: 1020px;
+  height: 38px;
+}
+/* line 118, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-nav-root {
+  margin: auto;
+  width: 50%;
+}
+/* line 123, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.pc-header-user-nav {
+  height: inherit;
+}
+
+/* line 130, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.visible-pc {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+/* line 134, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.visible-pc-inner {
+  margin: 0 auto;
+  padding: 8px 0 0;
+}
+
+/* line 141, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.clearfix ::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 148, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.l-left {
+  float: left;
+  width: 140px;
+  height: 38px;
+}
+
+/* line 154, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.l-right {
+  float: right;
+}
+
+/* line 159, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.nav-left {
+  float: left;
+  width: 180px;
+  height: 38px;
+}
+/* line 164, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.nav-right {
+  float: right;
+  height: inherit;
+}
+/* line 167, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/layout.scss */
+.nav-right ul li {
+  height: inherit;
+}
+/* line 1, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+img {
+  margin: 0 auto;
+}
+
+/* line 6, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.l-side {
+  float: left;
+  width: 280px;
+  margin: 0 40px 0 0;
+}
+/* line 12, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.l-container {
+  margin: 40px auto 0;
+  width: 1020px;
+  color: #c0c0c0;
+}
+/* line 17, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.l-content {
+  float: right;
+  width: 700px;
+}
+
+/* line 25, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-user-icon {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background: url("user-bg.jpg");
+  background-size: cover;
+  width: inherit;
+}
+/* line 32, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-user-icon a {
+  display: block;
+}
+/* line 35, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-user-icon h2 {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+/* line 41, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-number {
+  margin: 8px 0 0;
+  height: 16px;
+  box-sizing: inherit;
+}
+/* line 45, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-number div {
+  display: inline-block;
+  text-align: center;
+}
+/* line 51, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-tab-container-notification-todo {
+  width: inherit;
+}
+/* line 55, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-tabs {
+  width: 100%;
+  line-height: 74px;
+}
+/* line 58, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-tabs li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+/* line 62, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-tabs li a {
+  display: block;
+  height: 74px;
+}
+/* line 69, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-nav-list {
+  border-top: 0.5px solid #eee;
+  background: white;
+}
+/* line 72, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-nav-list-item {
+  position: relative;
+  display: block;
+  min-height: 48px;
+  padding: 16px;
+}
+/* line 78, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-nav-list li {
+  width: inherit;
+  border-bottom: 0.5px solid #eee;
+}
+/* line 83, /Users/masayahasegawa/programming/rails_projects/PocketTerrace/app/assets/stylesheets/users.scss */
+.mypage-nav-head {
+  width: inherit;
+  margin-top: 24px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
