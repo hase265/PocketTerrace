@@ -225,3 +225,25 @@ a, area, button, input, label, select, textarea, [tabindex] {
     text-align: center;
   }
 }
+
+//ユーザーログイン
+.login {
+  &-panel {
+    width: 456px;
+    margin: 0 auto;
+    background: #fff;
+    a {
+      display: block;
+      margin: 40px 0 0;
+    }
+  }
+  &-submit {
+    margin: 48px 0 0;
+  }
+  &-form {
+    &-inner {
+      padding: 24px 32px;
+
+    }
+  }
+}

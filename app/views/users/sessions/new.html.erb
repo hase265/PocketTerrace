@@ -1,26 +1,24 @@
-<h2>Log in</h2>
+<div class="single-container">
+  <header class="single-header">
+    <h1><%= link_to image_tag('mercari.svg', alt: "PocketTerrace"), root_path %></h1>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  </header>
+  <main class="single-main">
+    <div class="login-panel">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="login-form-inner">
+          <div class="form-group">
+            <%= f.email_field :email, autofocus: true, placeholder: 'メールアドレス', autocomplete: "email", class: "login-input-text input-default" %>
+          </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+          <div class="form-group">
+            <%= f.password_field :password, placeholder: 'パスワード', autocomplete: "off", class: "login-input-text input-default" %>
+          </div>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+          <%= button_tag "ログイン", class: "login-submit btn-red btn-default" %>
+          <%= link_to "パスワードをお忘れの方", '#' %>
+        </div>
+      <% end %>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+  </main>
+</div>
